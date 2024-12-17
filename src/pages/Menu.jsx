@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 const MenuPage = ({ cartCount, setCartCount }) => {
   // Handle adding coffee to the cart
   const handleAddToCart = () => {
-    setCartCount(cartCount + 1); // Increase the cart count by 1
+    setCartCount(cartCount + 1); 
   };
 
   return (

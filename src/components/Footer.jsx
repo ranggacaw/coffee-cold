@@ -12,8 +12,8 @@ const Footer = () => {
     <Box
       component="footer"
       sx={{
-        backgroundColor: '#3E2723', // Deep brown for a cozy feel
-        color: '#F1E3D3', // Creamy beige for text
+        backgroundColor: '#3E2723', 
+        color: '#F1E3D3', 
         padding: 4,
         marginTop: 'auto',
         fontFamily: 'Georgia, serif',

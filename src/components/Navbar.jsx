@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Button, Box, IconButton, Badge } from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link } from 'react-router-dom'; 
 
 const DesktopNavbar = ({ cartCount }) => {
   return (
@@ -22,8 +22,8 @@ const DesktopNavbar = ({ cartCount }) => {
           <IconButton
             aria-label="cart"
             sx={{ color: '#F1E3D3', '&:hover': { color: '#D7CCC8' } }}
-            component={Link} // Make it clickable like a link
-            to="/cart" // Add the path you want to navigate to
+            component={Link} 
+            to="/cart" 
           >
             <Badge badgeContent={cartCount} color="error">
               <ShoppingCartIcon />
@@ -34,7 +34,7 @@ const DesktopNavbar = ({ cartCount }) => {
           <Button
             sx={{ color: '#F1E3D3', '&:hover': { color: '#D7CCC8' } }}
             component={Link}
-            to="/" // Link to Home
+            to="/"
           >
             Home
           </Button>
@@ -43,7 +43,7 @@ const DesktopNavbar = ({ cartCount }) => {
           <Button
             sx={{ color: '#F1E3D3', '&:hover': { color: '#D7CCC8' } }}
             component={Link}
-            to="/menu" // Link to the menu page
+            to="/menu" 
           >
             All Menu
           </Button>
@@ -52,7 +52,7 @@ const DesktopNavbar = ({ cartCount }) => {
           <Button
             sx={{ color: '#F1E3D3', '&:hover': { color: '#D7CCC8' } }}
             component={Link}
-            to="/contact" // Link to the contact page
+            to="/contact"
           >
             Contact
           </Button>

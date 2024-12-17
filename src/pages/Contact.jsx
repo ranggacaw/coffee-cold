@@ -58,7 +58,7 @@ const Contact = () => {
               fullWidth
               sx={{
                 '& .MuiOutlinedInput-root': {
-                  backgroundColor: '#FFFFFF', // White background for input fields
+                  backgroundColor: '#FFFFFF', 
                 },
               }}
             />
