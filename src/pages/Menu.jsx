@@ -6,8 +6,9 @@ import Footer from '../components/Footer';
 
 const MenuPage = ({ cartCount, setCartCount }) => {
   // Handle adding coffee to the cart
-  const handleAddToCart = () => {
+  const handleAddToCart = (id) => {
     setCartCount(cartCount + 1); 
+    console.log(id);
   };
 
   return (
@@ -62,7 +63,7 @@ const MenuPage = ({ cartCount, setCartCount }) => {
                     <Button
                       variant="contained"
                       color="primary"
-                      onClick={handleAddToCart}
+                      onClick={() => handleAddToCart(coffee.id)}
                       sx={{
                         backgroundColor: '#5D4037', // Dark brown button
                         '&:hover': { backgroundColor: '#3E2723' },
