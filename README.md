@@ -1,70 +1,132 @@
-# Getting Started with Create React App
+# Coffee Cold
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Coffee Cold is a React-based web application designed to provide a modern and dynamic interface. This project leverages Firebase for backend services, React Router DOM for navigation, and Tailwind CSS for efficient styling.
 
-## Available Scripts
+## Features
+- **React**: Utilizes React v19 for building user interfaces.
+- **Firebase**: Provides backend services such as authentication and database.
+- **React Router DOM**: Enables seamless client-side routing.
+- **Tailwind CSS**: Implements utility-first CSS for rapid UI development.
+- **Material-UI (MUI)**: Enhances UI with pre-designed components and icons.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Getting Started
+Follow these steps to set up the project on your local machine.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
+Ensure you have the following installed on your machine:
+- Node.js (v16 or higher)
+- npm or yarn
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ranggacaw/coffee-cold.git
+   ```
 
-### `npm test`
+2. Navigate to the project directory:
+   ```bash
+   cd coffee-cold
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-### `npm run build`
+### Running the Application
+Start the development server:
+```bash
+npm start
+```
+The application will be available at [http://localhost:3000](http://localhost:3000).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Structure
+```
+coffee-cold/
+|-- src/
+|   |-- components/  # Reusable React components
+|   |-- pages/       # Page-level components
+|   |-- styles/      # Tailwind CSS and global styles
+|   |-- firebase.js  # Firebase configuration
+|-- public/          # Static assets
+|-- package.json     # Project metadata and dependencies
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Firebase Setup
+1. Create a Firebase project at [Firebase Console](https://console.firebase.google.com/).
+2. Add your Firebase configuration to a `firebase.js` file in the `src/` folder:
+   ```javascript
+   import { initializeApp } from 'firebase/app';
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   const firebaseConfig = {
+       apiKey: "your-api-key",
+       authDomain: "your-auth-domain",
+       projectId: "your-project-id",
+       storageBucket: "your-storage-bucket",
+       messagingSenderId: "your-messaging-sender-id",
+       appId: "your-app-id"
+   };
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   const app = initializeApp(firebaseConfig);
+   export default app;
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Scripts
+The following npm scripts are available:
+- `start`: Starts the development server.
+- `build`: Builds the app for production.
+- `test`: Runs tests using React Testing Library.
+- `eject`: Ejects the configuration (use with caution).
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Dependencies
+Here is a list of major dependencies used in this project:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Core Dependencies
+- `react`: ^19.0.0
+- `react-router-dom`: ^7.0.2
+- `firebase`: ^11.1.0
+- `tailwindcss`: ^3.4.16
 
-### Code Splitting
+### Styling Dependencies
+- `@mui/material`: ^6.2.0
+- `@emotion/react`: ^11.14.0
+- `styled-components`: ^6.1.13
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Testing Dependencies
+- `@testing-library/react`: ^13.4.0
+- `@testing-library/jest-dom`: ^5.17.0
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Development Notes
+- **Tailwind CSS**: You can customize Tailwind in the `tailwind.config.js` file.
+- **Firebase**: Ensure the Firebase credentials are stored securely and never commit them to source control.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
+This project is licensed under the [MIT License](LICENSE).
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contributing
+We welcome contributions! Feel free to fork the repository and submit a pull request.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Author
+[Your Name](https://github.com/ranggacaw)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy coding!
