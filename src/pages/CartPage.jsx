@@ -1,14 +1,9 @@
 import React, { useState } from 'react';
 import { Box, Container, Grid, Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
-import DesktopNavbar from '../components/Navbar';
 
 const CartPage = () => {
-  const [cartItems, setCartItems] = useState([]);
+  const [cartItems] = useState([]);
   
-  const handleAddToCart = (coffee) => {
-    setCartItems((prevItems) => [...prevItems, coffee]);
-  };
-
   const calculateTotal = () => {
     return cartItems.reduce((total, item) => total + item.price, 0).toFixed(2);
   };

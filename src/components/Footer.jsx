@@ -1,10 +1,8 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
 import IconButton from '@mui/material/IconButton';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Footer = () => {
@@ -38,18 +36,16 @@ const Footer = () => {
             <IconButton
               sx={{ color: '#F1E3D3', '&:hover': { color: '#D7CCC8' } }}
               aria-label="Facebook"
+              href='https://www.facebook.com/ranggacahyaw'
+              target='_blank'
             >
               <FacebookIcon />
             </IconButton>
             <IconButton
               sx={{ color: '#F1E3D3', '&:hover': { color: '#D7CCC8' } }}
-              aria-label="Twitter"
-            >
-              <TwitterIcon />
-            </IconButton>
-            <IconButton
-              sx={{ color: '#F1E3D3', '&:hover': { color: '#D7CCC8' } }}
               aria-label="Instagram"
+              href='https://www.instagram.com/ranggacaw'
+              target='_blank'
             >
               <InstagramIcon />
             </IconButton>
@@ -62,9 +58,9 @@ const Footer = () => {
             Visit Us
           </Typography>
           <Typography variant="body2">
-            123 Coffee Street
+            Rumah Saya
             <br />
-            Bean Town, CA 90210
+            di Bekasi
           </Typography>
           <Typography variant="body2" sx={{ marginTop: 1 }}>
             Open: 8:00 AM - 9:00 PM
